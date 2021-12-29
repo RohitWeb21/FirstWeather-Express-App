@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>{{>headerlinks}}</head>
+
+<link rel="stylesheet" href="css/404.css">
+<body>
+    {{>navbar}}
+
+    <section class="container ">
+    <img src="https://www.gograndtrip.com/static/media/404.978c100e.gif" alt="Computer man" >
+      <article>
+          <p>Welcome to the weather app</p>
+          <h2>Opps! Page Not Found</h2>
+          <a href="/about"
+            ><button class="button404" onclick={history.back()}>GO back</button></a
+          >
+        </article>
+    </section>
+     {{>footer}}
+</body>
+</html>

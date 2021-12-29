@@ -1,0 +1,36 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+img{
+
+width: 450px;
+
+}
+
+h2{
+font-size: 5rem;
+font-weight:700;
+}
+
+
+article{
+    text-align: center;
+}
+article p{
+    font-size: 1.5rem;
+}
+
+.button404{
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    outline: none;
+    border-radius: 2rem;
+    box-shadow: 0px 6px 8px -6px #000;
+    padding: 0.5rem 2rem;
+    border: none;
+    margin-top: 2rem;
+
+}

@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;1,400;1,600&family=Piazzolla:ital,wght@0,300;0,400;0,500;0,600;0,800;0,900;1,300;1,400;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Piazzolla', serif;
+}
+
+:root {
+    --main-bg: #1e272e;
+    --main-color: #0097e6;
+}
+
+html {
+    font-size: 62.5%;
+}
+body{
+  
+    overflow-x:hidden;
+    display: flex;
+    flex-direction:column ;
+    height: 100vh;
+
+}
+
+header .navbar {
+    color: var(--main-color) !important;
+    background-color: var(--main-bg) !important;
+    font-size: 1.5rem;
+}
+
+header div a .fa-snowflake {
+    animation: rot 2s linear infinite;
+}
+
+@keyframes rot {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+header .navbar .navbar-brand {
+    font-size: 2rem;
+    color: var(--main-color);
+}
+
+header .navbar .navbar-brand:hover {
+    font-size: 2rem;
+    color: #fff;
+}
+
+
+
+.nav-link{
+    color: var(--main-color) !important;
+}
+.nav-link:hover {
+    color: #fff !important;
+}
+
+
+
+/*this is left section*/
+
+.leftSection {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+
+}
+
+.leftSection p {
+    font-size: 2rem;
+
+}
+
+.leftSection h1 {
+    text-transform: capitalize;
+
+}
+
+.leftSection h1>span {
+    color: var(--main-color)
+}
+
+.leftSection button {
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    outline: none;
+    border-radius: 2rem;
+    box-shadow: 0px 6px 8px -6px #000;
+    padding: 0.5rem 2rem;
+    border: none;
+    margin-top: 2rem;
+
+}
+
+/*this is right section*/
+.RightSection {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+
+}
+.imgCarousel{
+    height: 450px;
+}
+
+/* footer section code  */
+
+footer {
+    width: 100vw;
+    background-color: var(--main-bg);
+    color: var(--main-color);
+    font-size: 1.2rem;
+    text-align: center;
+margin-top: auto;
+}
+footer p {
+    line-height: 5rem;
+    text-transform: capitalize;
+    margin:0px
+}
+@media (max-width:600px){
+    .nav-link{
+       
+        margin-left: 20px
+    }
+}

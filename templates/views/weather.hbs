@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+       {{>headerlinks}}
+       <link rel="stylesheet" href="css/Weather.css">
+</head>
+
+<body>
+       {{>navbar}}
+
+       <form>
+              <input type="text" placeholder="Please Type here" id="input"/> 
+             <button id="SearchBtn">Search</button>
+       </form>
+       <section class="Main_weather">
+              <article class="Weather_info">
+                     <div class="timeDate">
+                            <p class="ms-3 " id="Day">Thursday</p>
+                            <p class="Date"><span id="Date"> </span><span id="month"></span> </p>
+                     </div>
+                     <div class="weatherTemp">
+                            <P id="Error">Pls Enter The Value</P>
+                            <span id="city"> </span><span id="country"></span>
+                            <div>                            
+                            <p id="temp"></p><span>&deg; C</span>
+                            <p id="weatherType"><i class="fa fa-cloud "></i></p>
+                            </div>
+
+                     </div>
+              </article>
+
+       </section>
+
+       {{>footer}}
+       <script src="js/MainApi.js"></script>
+     
+</body>
+
+</html>
